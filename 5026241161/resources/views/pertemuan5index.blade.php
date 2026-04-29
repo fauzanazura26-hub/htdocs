@@ -17,8 +17,8 @@
     <center>
       <h1>Fauzan Azura</h1>
       <h1>5026241161</h1>
-      <p><a href="pertemuan5.html" target="_blank"><button class="btn btn-primary">Pertemuan 5</button></a></p>
-      <p><a href="tugasLinktree.html" target="_blank"><button class="btn btn-primary">Tugas Link Tree</button></a></p>
+      <p><a href="/pert5" target="_blank"><button class="btn btn-primary">Pertemuan 5</button></a></p>
+      <p><a href="/linktree" target="_blank"><button class="btn btn-primary">Tugas Link Tree</button></a></p>
       <p><a href="" target="_blank"></a><button class="btn btn-primary">Tugas Make Over IG</button></a></p>
       <p><a href="" target="_blank"></a><button class="btn btn-primary">UTS</button></a></p>
 
