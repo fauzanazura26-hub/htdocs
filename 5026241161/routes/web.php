@@ -60,3 +60,8 @@ Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 
 //crud tabel pegawai
 Route::get('/pegawai', [PegawaiDBController::class, 'index']);
+Route::get('/pegawai/tambah', [PegawaiDBController::class, 'index']);
+Route::post('/pegawai/store', [PegawaiDBController::class, 'index']);
+Route::get('/pegawai/edit/{id}', [PegawaiDBController::class, 'index']);
+Route::post('/pegawai/update', [PegawaiDBController::class, 'index']);
+Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'index']);
