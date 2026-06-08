@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController ;
 use App\Http\Controllers\PegawaiDBController ;
+use App\Http\Controllers\KeranjangController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -65,3 +66,9 @@ Route::post('/pegawaistore', [PegawaiDBController::class, 'store']);
 Route::get('/pegawaiedit/{id}', [PegawaiDBController::class, 'edit']);
 Route::post('/pegawaiupdate', [PegawaiDBController::class, 'update']);
 Route::get('/pegawaihapus/{id}', [PegawaiDBController::class, 'hapus']);
+
+
+Route::get('/keranjang', [KeranjangController::class, 'indexKeranjang']);
+Route::get('/keranjang/tambah', [KeranjangController::class, 'tambahKeranjang']);
+Route::post('/keranjang/store', [KeranjangController::class, 'storeKeranjang']);
+Route::get('/keranjang/hapus/{id}', [KeranjangController::class, 'hapusKeranjang']);
