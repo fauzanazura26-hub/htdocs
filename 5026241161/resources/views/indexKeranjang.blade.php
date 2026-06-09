@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Keranjang Belanja</title>
-</head>
-<body>
-    <h2>Keranjang Belanja</h2>
-    <a href="/keranjang/tambah"><button>Beli</button></a>
-    <br><br>
 
-    <table border="1" cellpadding="8">
+    @extends('template')
+
+    @section('title', 'Data Pegawai')
+
+    @section('konten')
+    <h2>Keranjang Belanja</h2>
+    <div class="container mt-4">
+    <a href="/keranjang/tambah">
+        <button class="btn btn-primary mb-3">+ Tambah Baru</button>
+    </a>
+
+    <table class="table table-bordered">
         <thead>
             <tr>
                 <th>Kode Pembelian</th>
@@ -16,7 +18,8 @@
                 <th>Jumlah Pembelian</th>
                 <th>Harga per item</th>
                 <th>Total</th>
-                <th>Action</th>
+                <th>Tambah</th>
+                <th>Batal</th>
             </tr>
         </thead>
         <tbody>
@@ -28,13 +31,18 @@
                 <td>Rp {{ number_format($item->Harga, 0, ',', '.') }}</td>
                 <td>Rp {{ number_format($item->Jumlah * $item->Harga, 0, ',', '.') }}</td>
                 <td>
+                    <a href="/keranjang/tambah">
+                        <button class="btn btn-success btn-sm">Beli</button>
+                    </a>
+                </td>
+                <td>
                     <a href="/keranjang/hapus/{{ $item->ID }}">
-                        <button>Batal</button>
+                        <button class="btn btn-danger btn-sm">Batal</button>
                     </a>
                 </td>
             </tr>
             @endforeach
         </tbody>
     </table>
-</body>
-</html>
+</div>
+    @endsection
