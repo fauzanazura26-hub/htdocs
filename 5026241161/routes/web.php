@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController ;
 use App\Http\Controllers\PegawaiDBController ;
 use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\NilaiKuliahController;
+use App\Http\Controllers\VgaController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -78,3 +79,10 @@ Route::get('/keranjang/hapus/{id}', [KeranjangController::class, 'hapusKeranjang
 Route::get('/nilaikuliah', [NilaiKuliahController::class, 'indexNilai']);
 Route::get('/nilaikuliah/tambah', [NilaiKuliahController::class, 'tambahNilai']);
 Route::post('/nilaikuliah/store', [NilaiKuliahController::class, 'storeNilai']);
+
+
+
+Route::get('/vga', [VgaController::class, 'indexVga']);
+Route::get('/vga/tambah', [VgaController::class, 'tambahVga']);
+Route::post('/vga/store', [VgaController::class, 'storeVga']);
+Route::get('/vga/hapus/{id}', [VgaController::class, 'hapusVga']);
