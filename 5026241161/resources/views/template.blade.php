@@ -24,13 +24,16 @@
                         <a class="nav-link active" href="/pegawai">Pegawai</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/keranjang">PR 1</a>
+                        <a class="nav-link" href="/vga">PR 1 (pra eas)</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/nilaikuliah">PR 2</a>
+                        <a class="nav-link" href="/siswa">PR 2 (P-14 Siswa)</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/vga">PR 3</a>
+                        <a class="nav-link" href="/keranjang">PR 3 (P-15 Laki-laki)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/nilaikuliah">PR 4 (P-15 Perempuan)</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">EAS</a>
