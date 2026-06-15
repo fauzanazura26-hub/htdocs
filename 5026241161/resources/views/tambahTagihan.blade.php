@@ -1,6 +1,6 @@
     @extends('template')
 
-    @section('title', 'Data Tagihan Air')
+    @section('title', 'Kode Soal tagihan_air')
 
     @section('konten')
 <body>
