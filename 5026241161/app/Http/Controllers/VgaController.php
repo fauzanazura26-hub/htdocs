@@ -18,7 +18,7 @@ class VgaController extends Controller
         return view('tambahVga');
     }
 
-    public function store(Request $request)
+    public function storeVga(Request $request)
     {
         DB::table('vga')->insert([
             'merkvga'  => $request->merkvga,
@@ -28,7 +28,7 @@ class VgaController extends Controller
         return redirect('/vga');
     }
 
-    public function hapus($id)
+    public function hapusVga($id)
     {
         DB::table('vga')->where('kodevga', $id)->delete();
         return redirect('/vga');

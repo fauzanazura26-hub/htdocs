@@ -5,7 +5,7 @@
 
     @section('konten')
 <center>
-    <title>Nilai Kuliah</title>
+<title>Nilai Kuliah</title>
 </head>
 <body>
     <h2>Data Nilai Kuliah</h2>

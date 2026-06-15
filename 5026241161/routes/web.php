@@ -9,6 +9,7 @@ use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\NilaiKuliahController;
 use App\Http\Controllers\VgaController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\tagihanAirController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -94,3 +95,8 @@ Route::post('/siswa', [SiswaController::class, 'store'])->name('siswa.store');
 Route::get('/siswa/{nrp}/edit', [SiswaController::class, 'editSiswa'])->name('siswa.edit');
 Route::put('/siswa/{nrp}', [SiswaController::class, 'update'])->name('siswa.update');
 Route::delete('/siswa/{nrp}', [SiswaController::class, 'destroy'])->name('siswa.destroy');
+
+Route::get('/eas', [TagihanAirController::class, 'indexTagihan']);
+Route::get('/eas/tambah', [TagihanAirController::class, 'tambahTagihan']);
+Route::post('/eas/store', [TagihanAirController::class, 'storeTagihan']);
+Route::get('/eas/hapus/{id}', [TagihanAirController::class, 'hapusTagihan']);
